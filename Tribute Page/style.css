@@ -3,7 +3,7 @@
     margin: 0;
 }
 
-main {
+#main {
     background-color: rgb(243, 238, 238);
     margin: auto;
     margin-top: 25px;
@@ -77,6 +77,10 @@ ul > li {
     margin-top: 25px;
 }
 
+span {
+  font-weight: 700;
+}
+
 @media (max-width: 400px) {
     #img-div {
         padding: 0;
@@ -98,7 +102,6 @@ ul > li {
 
     ul {
         width: 90%;
-        font-weight: 750;
     }
 
     .quote {
