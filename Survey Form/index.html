@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Survey Form</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1 id="title">FreeCodeCamp Forum Survey</h1>
+            <p style="margin-top: 1em;" id="description">Please fill this form to show your experience about FCC Forum</p>
+        </header>
+        
+        <article>
+            <form id="survey-form" action="#">
+                <div id="names">
+                    <label id="name-label">
+                        <p>Name</p>
+                        <input id="name" type="text" placeholder="Enter your name" required>
+                    </label>
+                    <label id="nickname-label">
+                        <p>Forum Nickname</p>
+                        <input id="nickname" type="text" placeholder="Enter your forum nickname" required>
+                    </label>    
+                </div>
+
+                <div id="mail-age">
+                    <label id="email-label">
+                        <p style="margin-top: 25px;">Email</p>
+                        <input style="width: 320px;" id="email" type="email" placeholder="Email" required>
+                    </label>
+                    <label id="number-label">
+                        <p style="margin-top: 25px;">Age(Optional)</p>
+                        <input style="width: 120px; padding-right: 10px;" id="number" type="number" min="10" max="99" placeholder="Age">
+                    </label>   
+                </div>  
+
+                <label for="dropdown">
+                    <p style="margin-top: 15px;">Which topic do you use the most?</p>
+                    <select name="dropdown" id="dropdown" required>
+                        <option value="" selected disabled>Select one</option>
+                        <option value="general">General</option>
+                        <option value="js">Javascript</option>
+                        <option value="h-s">HTML-CSS</option>
+                        <option value="feed">Project Feedback</option>
+                        <option value="career">Career Advice</option>
+                        <option value="do-it">You can do this!</option>
+                        <option value="contributors">Contributors</option>
+                        <option value="support">FreeCodeCamp Support</option>
+                        <option value="guide">Guide</option>
+                        <option value="lang">Languages</option>
+                    </select>
+                </label>
+
+                <p>How often do you use FCC Forum?</p>
+                <div id="radio-div">
+                    <label for="radio1">
+                        <input value="radio1" name="radioclass" class="radio" type="radio" checked>Almost every day
+                    </label>
+                    <label for="radio2">
+                        <input value="radio2" name="radioclass" class="radio" type="radio">Sometimes
+                    </label>
+                    <label for="radio3">
+                        <input value="radio3" name="radioclass" class="radio" type="radio">When I get stuck
+                    </label>
+                    <label for="radio4">
+                        <input value="radio4" name="radioclass" class="radio" type="radio">I live inside the forum
+                    </label>
+                </div>
+
+                <p style="margin: 20px 0 5px 0;">What is your favorite thing(s) about FCC Forum?</p>
+                <div id="checkbox-div">
+                    <label for="supportive">
+                        <input value="supportive" type="checkbox" class="checkbox" name="favoritething">Supportive
+                    </label>
+                    <label for="network">
+                        <input value="network" type="checkbox" class="checkbox" name="favoritething">Network
+                    </label>
+                    <label for="community">
+                        <input value="community" type="checkbox" class="checkbox" name="favoritething">Community
+                    </label>
+                    <label for="solutions">
+                        <input value="solutions" type="checkbox" class="checkbox" name="favoritething">Finding solutions
+                    </label>
+                    <label for="users">
+                        <input value="users" type="checkbox" class="checkbox" name="favoritething">Users
+                    </label>
+                    <label for="guidance">
+                        <input value="guidance" type="checkbox" class="checkbox" name="favoritething">Guidance
+                    </label>
+                    <label for="feedback">
+                        <input value="feedback" type="checkbox" class="checkbox" name="favoritething">Feedback
+                    </label>
+                    <label for="encouragement">
+                        <input value="encouragement" type="checkbox" class="checkbox" name="favoritething">Encouragement
+                    </label>
+                    <label for="collaboration">
+                        <input value="collaboration" type="checkbox" class="checkbox" name="favoritething">Collaboration
+                    </label>
+                    <label for="coolplace">
+                        <input value="coolplace" type="checkbox" class="checkbox" name="favoritething">Cool place
+                    </label>
+                </div>
+
+                <p style="margin: 15px 0 5px 0;">If you have more to say about forum, please do so.</p>
+                <textarea maxlength="500" name="textarea" id="textarea" cols="30" rows="10">Write here.</textarea>
+
+                <button id="submit" type="submit">Submit</button>
+            </form>
+        </article>
+    </body>
+</html>
