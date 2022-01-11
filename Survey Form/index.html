@@ -11,35 +11,35 @@
     <body>
         <header>
             <h1 id="title">FreeCodeCamp Forum Survey</h1>
-            <p style="margin-top: 1em;" id="description">Please fill this form to show your experience about FCC Forum</p>
+            <p id="description">Please fill this form to show your experience about FCC Forum</p>
         </header>
         
-        <article>
+        <div id="main">
             <form id="survey-form" action="#">
-                <div id="names">
+                <div class="first-section">
+                    <p>Name</p>
+                    <p id="nick-id">Forum Nickname</p>  
                     <label id="name-label">
-                        <p>Name</p>
                         <input id="name" type="text" placeholder="Enter your name" required>
-                    </label>
+                    </label> 
                     <label id="nickname-label">
-                        <p>Forum Nickname</p>
                         <input id="nickname" type="text" placeholder="Enter your forum nickname" required>
                     </label>    
                 </div>
-
-                <div id="mail-age">
+                
+                <div class="second-section">
+                    <p id="mail-id">Email</p>
+                    <p id="age-id">Age(Optional)</p>
                     <label id="email-label">
-                        <p style="margin-top: 25px;">Email</p>
-                        <input style="width: 320px;" id="email" type="email" placeholder="Email" required>
+                        <input id="email" type="email" placeholder="Email" required>
                     </label>
                     <label id="number-label">
-                        <p style="margin-top: 25px;">Age(Optional)</p>
-                        <input style="width: 120px; padding-right: 10px;" id="number" type="number" min="10" max="99" placeholder="Age">
+                        <input id="number" type="number" min="10" max="99" placeholder="Age">
                     </label>   
                 </div>  
 
+                <p class="center">Which topic do you use the most?</p>
                 <label for="dropdown">
-                    <p style="margin-top: 15px;">Which topic do you use the most?</p>
                     <select name="dropdown" id="dropdown" required>
                         <option value="" selected disabled>Select one</option>
                         <option value="general">General</option>
@@ -55,61 +55,61 @@
                     </select>
                 </label>
 
-                <p>How often do you use FCC Forum?</p>
+                <p class="center">How often do you use FCC Forum?</p>
                 <div id="radio-div">
                     <label for="radio1">
-                        <input value="radio1" name="radioclass" class="radio" type="radio" checked>Almost every day
+                        <input value="radio1" id="radio1" name="radioclass" class="radio" type="radio" checked>Almost every day
                     </label>
                     <label for="radio2">
-                        <input value="radio2" name="radioclass" class="radio" type="radio">Sometimes
+                        <input value="radio2" id="radio2" name="radioclass" class="radio" type="radio">Sometimes
                     </label>
                     <label for="radio3">
-                        <input value="radio3" name="radioclass" class="radio" type="radio">When I get stuck
+                        <input value="radio3" id="radio3" name="radioclass" class="radio" type="radio">When I get stuck
                     </label>
                     <label for="radio4">
-                        <input value="radio4" name="radioclass" class="radio" type="radio">I live inside the forum
+                        <input value="radio4" id="radio4" name="radioclass" class="radio" type="radio">I live inside the forum
                     </label>
                 </div>
 
-                <p style="margin: 20px 0 5px 0;">What is your favorite thing(s) about FCC Forum?</p>
+                <p class="center">What is your favorite thing(s) about FCC Forum?</p>
                 <div id="checkbox-div">
                     <label for="supportive">
-                        <input value="supportive" type="checkbox" class="checkbox" name="favoritething">Supportive
+                        <input value="supportive" type="checkbox" class="checkbox" name="favoritething" id="supportive">Supportive
                     </label>
                     <label for="network">
-                        <input value="network" type="checkbox" class="checkbox" name="favoritething">Network
+                        <input value="network" type="checkbox" class="checkbox" name="favoritething" id="network">Network
                     </label>
                     <label for="community">
-                        <input value="community" type="checkbox" class="checkbox" name="favoritething">Community
+                        <input value="community" type="checkbox" class="checkbox" name="favoritething" id="community">Community
                     </label>
                     <label for="solutions">
-                        <input value="solutions" type="checkbox" class="checkbox" name="favoritething">Finding solutions
+                        <input value="solutions" type="checkbox" class="checkbox" name="favoritething" id="solutions">Finding solutions
                     </label>
                     <label for="users">
-                        <input value="users" type="checkbox" class="checkbox" name="favoritething">Users
+                        <input value="users" type="checkbox" class="checkbox" name="favoritething" id="users">Users
                     </label>
                     <label for="guidance">
-                        <input value="guidance" type="checkbox" class="checkbox" name="favoritething">Guidance
+                        <input value="guidance" type="checkbox" class="checkbox" name="favoritething" id="guidance">Guidance
                     </label>
                     <label for="feedback">
-                        <input value="feedback" type="checkbox" class="checkbox" name="favoritething">Feedback
+                        <input value="feedback" type="checkbox" class="checkbox" name="favoritething" id="feedback">Feedback
                     </label>
                     <label for="encouragement">
-                        <input value="encouragement" type="checkbox" class="checkbox" name="favoritething">Encouragement
+                        <input value="encouragement" type="checkbox" class="checkbox" name="favoritething" id="encouragement">Encouragement
                     </label>
                     <label for="collaboration">
-                        <input value="collaboration" type="checkbox" class="checkbox" name="favoritething">Collaboration
+                        <input value="collaboration" type="checkbox" class="checkbox" name="favoritething" id="collaboration">Collaboration
                     </label>
                     <label for="coolplace">
-                        <input value="coolplace" type="checkbox" class="checkbox" name="favoritething">Cool place
+                        <input value="coolplace" type="checkbox" class="checkbox" name="favoritething" id="coolplace">Cool place
                     </label>
                 </div>
 
-                <p style="margin: 15px 0 5px 0;">If you have more to say about forum, please do so.</p>
+                <p class="center">If you have more to say about forum, please do so.</p>
                 <textarea maxlength="500" name="textarea" id="textarea" cols="30" rows="10">Write here.</textarea>
 
                 <button id="submit" type="submit">Submit</button>
             </form>
-        </article>
+        </div>
     </body>
 </html>

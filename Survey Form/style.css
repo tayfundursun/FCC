@@ -14,19 +14,30 @@ body {
     padding: 3rem;
 }
 
+#description {
+    margin-top: 1em;
+    text-align: center;
+}
+
 header {
     border: 2.5px solid gray;
     border-radius: 1em;
     padding: 10px;
 }
 
-h1, p { 
+h1 { 
     display: flex;
     justify-content: center;
 }
 
-article {
-    margin-top: 5em;
+.center {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+#main {
+    margin-top: 2.5em;
 }
 
 input {
@@ -38,20 +49,48 @@ input {
     font-size: medium;
 }
 
-#names {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 5em 0 5em;
+.first-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.4em 1em;
+    justify-content: center;
+    margin: 1em 5em 0 5em;
+}
+
+.second-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0.4em 1em;
+    justify-content: center;
+    margin: 1em 5em 0 5em;
+    grid-template-areas: 
+        "p1"
+        "label1"
+        "p2"
+        "label2";
+}
+
+#mail-id {
+    text-align: center;
+}
+
+#age-id {
+    grid-area: p2;
+    text-align: center;
+    margin-top: 5px;
 }
 
 #email {
     display: block;
     margin: auto;
+    width: 20em;
 }
 
 #number {
     display: block;
     margin: auto;
+    width: 5em;
+    margin-bottom: 20px;
 }
 
 #mail-age {
@@ -138,20 +177,24 @@ input {
         border-radius: 1em;
     }
 
-    #name {
-        margin-bottom: 15px;
+    .first-section {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "p1"
+        "label1"
+        "p2"
+        "label2";
     }
 
-    article {
+    #nick-id, #age-id {
+        grid-area: p2;
+    }
+
+    #main {
         margin-top: 15px;
     }
 
-    #names {
-        display: grid;
-        justify-content: center;
-    }
-
-    #mail-age {
+    #names, #mail-age {
         display: grid;
         justify-content: center;
     }
