@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    font-family: 'Lato', sans-serif;
+}
+
+#navbar {
+    position: fixed;
+    width: 20%;
+    border: 1px solid gray;
+    margin: 1em;
+    box-shadow: 5px 10px rgb(240, 227, 204);
+}
+
+#main-doc {
+    width: 80%;
+    border: 1px solid gray;
+    margin: 1em 1em 1em 22%;
+    padding: 10px 20px;
+    box-shadow: 5px 10px rgb(240, 227, 204);
+}
+
+.main-section {
+    margin: 5px 0;
+}
+
+#navbar-h {
+    text-align: center;
+    padding: 5px 10px;
+}
+
+.nav-link {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    font-size: large;
+    color: rgb(89, 88, 88);
+    padding: 5px 10px;
+    border-top: 1px solid gray;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+header {
+    font-size: x-large;
+    font-weight: 700;
+    padding: 20px 0;
+}
+
+section > p {
+    margin: 20px 0 0 15px;
+    font-size: large;
+}
+
+li {
+    margin: 20px 0 0 65px;
+}
+
+code {
+    display: block;
+    padding: 5px 10px;
+    margin: 15px 0 0 45px;
+    background: rgb(235, 235, 235);
+}
+
+@media (max-width: 1220px) {
+    body {
+        flex-direction: column;
+    }
+
+    #navbar {
+        width: 92%;
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-auto-rows: 1fr;
+        margin: 1em;
+        padding: 10px 20px;
+    }
+
+    .nav-link {
+        border: 1px solid gray;
+    }
+
+    #main-doc {
+        width: 92%;
+        margin: 1em;
+    }
+    
+    #navbar-h {
+        grid-row: 1 / 4;
+        margin: auto;
+    }
+}
+
+@media (max-width: 770px) {
+    body {
+        width: 95%;
+        margin: auto;
+    }
+    
+    #navbar {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #main-doc {
+        width: 99%;
+        margin: 1em 0;
+        padding: 5px;
+        box-shadow: none;
+    }
+
+    #navbar {
+        width: 99%;
+        margin: 1em 0 0 0;
+        padding: 5px;
+        box-shadow: none;
+    }
+}
