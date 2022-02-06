@@ -1,0 +1,289 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    font-family: 'Architects Daughter', cursive;
+    scroll-behavior: smooth;
+}
+
+#navbar {
+    position: fixed;
+    background-color: #e3e3e3;
+    width: 100%;
+    height: 5em;
+}
+
+.nav-a {
+    font-size: x-large;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-a:hover {
+    color: #c60021;
+    text-decoration: overline;
+}
+
+#nav-ul {
+    display: flex;
+    flex-direction: row-reverse;
+    list-style-type: none;
+    padding: 0 5em;
+}
+
+.nav-li {
+    padding: 0 10px;
+    margin: 0 10px;
+    line-height: 5em;
+}
+
+#main {
+    padding-top: 5em;
+}
+
+#welcome-section {
+    height: 912px;
+    text-align: center;
+    background-color: #e3e3e3;
+}
+
+#welcome-d1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 7em;
+    align-items: center;
+}
+
+#my-photo {
+    width: 70%;
+    border-radius: 20em;
+    padding: 10px;
+    margin: 0 2em;
+    background-color: white;
+}
+
+#welcome-a {
+    text-decoration: none;
+    color: #c60021;
+}
+
+h6 {
+    margin: 0 10px;
+}
+
+#welcome-h {
+    display: inline;
+    font-size: 4em;
+    color: #c60021;
+}
+
+#welcome-p {
+    width: 95%;
+    margin: 1em 0;
+}
+
+#welcome-ph {
+    margin: auto;
+    margin-right: 4em;
+    padding: 20px;
+    text-align: justify;
+    font-size: larger;
+}
+
+fieldset {
+    display: inline;
+    border-radius: 0.5em;
+    padding: 5px 1em;
+}
+
+#welcome-scroll {
+    font-size: 2em;
+    margin: 2em 0;
+    padding: 10px;
+    transition: transform 1s linear;
+}
+
+#welcome-scroll:hover {
+    transform: translateY(20px);
+}
+
+#project-section {
+    height: 1050px;
+    background-color: #999999;
+}
+
+#project-h {
+    text-align: center;
+    color: white;
+    padding: 2em 0 5px 0;
+    font-size: 3em;
+    text-decoration: underline;
+}
+
+#projects {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    width: 80%;
+    margin: auto;
+    justify-items: center;
+}
+
+.project-tile {
+    width: 500px;
+    height: auto;
+    text-align: center;
+    padding: 5px 10px;
+    margin: 2em 0;
+    border-radius: 5px;
+    border: 1px solid white;
+    background: white;
+    transition: transform 2s;
+}
+
+.project-tile:hover {
+    transform: scale(1.25);
+}
+
+header {
+    border-radius: 5px;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 1.5em;
+    background-color: #e3e3e3;
+}
+
+.project-img {
+    width: 100%;
+    max-height: 270px; 
+    object-fit: contain;
+}
+
+.project-a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+}
+
+#contact {
+    height: 620px;
+    background-color: #383838;
+    color: #e3e3e3;
+    text-align: center;
+}
+
+#contact-h {
+    font-size: 4em;
+    padding-top: 3em;
+}
+
+#contact > p {
+    font-size: 1em;
+    margin: 2em 0 1em 0;
+}
+
+#contact-ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.contact-li {
+    margin: 0.2em 1em;
+    padding: 5px;
+    font-size: 2em;
+    transition: transform 1.5s linear;
+}
+
+.contact-li:hover {
+    transform: translateY(10px);
+}
+
+.logo-img {
+    width: 24px;
+}
+
+.contact-a {
+    text-decoration: none;
+    color: #e3e3e3;
+}
+
+/* TABLET */
+@media (max-width: 1250px) {
+    #welcome-section {
+        height: 1000px;
+    }
+    
+    #my-photo {
+        width: 80%;
+    }
+
+    #project-section {
+        height: 1850px;
+    }
+
+    #projects {
+        grid-template-columns: 1fr;
+    }
+
+    .project-tile {
+        width: 90%;
+    }
+}
+
+/* PHONE */
+@media (max-width: 850px) {
+    #nav-ul {
+        justify-content: center;
+    }
+
+    #welcome-section {
+        height: 1200px;
+    }
+
+    #welcome-d1 {
+        flex-direction: column;
+        padding-top: 3em;
+    }
+
+    #welcome-ph {
+        text-align: center;
+        margin: 0;
+    }
+
+    #welcome-p {
+        text-align: justify;
+    }
+
+    #my-photo {
+        width: 70%;
+    }
+
+    #welcome-scroll {
+        margin: 1em 0;
+    }
+
+    #project-section {
+        height: 1800px;
+    }
+
+    #project-h {
+        padding-top: 1em;
+    }
+
+    #contact-ul {
+        flex-direction: column;
+    }
+
+    #contact-h {
+        padding-top: 1em;
+    }
+
+}
+
+@media (max-width: 475px) {
+    #project-section {
+        height: 1500px;
+    }
+}
